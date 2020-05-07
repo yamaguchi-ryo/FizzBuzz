@@ -20,34 +20,34 @@ public class FizzBuzzTest {
 	/**
 	 * @throws java.lang.Exception
 	 */
-	@BeforeClass//①
+	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
 	}
 
 	/**
 	 * @throws java.lang.Exception
 	 */
-	@AfterClass//⑧
+	@AfterClass
 	public static void tearDownAfterClass() throws Exception {
 	}
 
 	/**
 	 * @throws java.lang.Exception
 	 */
-	@Before//②⑤
+	@Before
 	public void setUp() throws Exception {
 	}
 
 	/**
 	 * @throws java.lang.Exception
 	 */
-	@After//④⑦
+	@After
 	public void tearDown() throws Exception {
 	}
 
 	/**
 	 * {@link fizzbuzz.FizzBuzz#fizzBuzzCheck(int)}
-	 * のためのテスト・メソッド。(引数が0)
+	 * のためのテスト・メソッド。(引数が〇の時の対処のテスト)
 	 */
 	@Test
 	public void testFizzBuzzCheck_01() {
