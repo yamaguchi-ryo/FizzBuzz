@@ -32,11 +32,11 @@ public class FizzBuzz {
             		System.out.println("数字を入力してください");
             		scan = new Scanner(System.in);
         		inputNumber = scan.nextLine();
-        	if(inputNumber.matches("^[0-9]{1,9}$")) {
-        		i ++;
-        	} else {
-        		System.out.println("整数9桁までの数字を入力してください");
-        	}
+        		if(inputNumber.matches("^[0-9]{1,9}$")) {
+        			i ++;
+        		} else {
+        			System.out.println("整数9桁までの数字を入力してください");
+        		}
         	}
         	scan.close();
         	String result = fizzBuzzCheck(Integer.parseInt(inputNumber));
