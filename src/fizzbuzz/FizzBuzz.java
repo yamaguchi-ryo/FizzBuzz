@@ -24,23 +24,17 @@ public class FizzBuzz {
 
 	public static void main(String[] args) {
 
-        	String inputNumber = null;
-        	Scanner scan = null;
-        	int i = 0;
+		System.out.println("数字を入力してください");
+		Scanner scan = new Scanner(System.in);
+		String inputNumber = scan.nextLine();
+		scan.close();
 
-        	while(i < 1) {
-            		System.out.println("数字を入力してください");
-            		scan = new Scanner(System.in);
-        		inputNumber = scan.nextLine();
-        		if(inputNumber.matches("^[0-9]{1,9}$")) {
-        			i ++;
-        		} else {
-        			System.out.println("整数9桁までの数字を入力してください");
-        		}
-        	}
-        	scan.close();
-        	String result = fizzBuzzCheck(Integer.parseInt(inputNumber));
+		if(!inputNumber.matches("^[0-9]{1,9}$")) {
+			System.out.println("整数9桁までの数字を入力してください");
+			return;
+		}
+
+		String result = fizzBuzzCheck(Integer.parseInt(inputNumber));
 		System.out.println(result);
 	}
 }
-
