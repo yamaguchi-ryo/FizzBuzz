@@ -31,6 +31,7 @@ public class FizzBuzz {
 
 		if(!inputNumber.matches("^[0-9]{1,9}$")) {
 			System.out.println("整数9桁までの数字を入力してください");
+			return;
 		}
 
 		String result = fizzBuzzCheck(Integer.parseInt(inputNumber));
