@@ -37,4 +37,8 @@ public class FizzBuzz {
 		String result = fizzBuzzCheck(Integer.parseInt(inputNumber));
 		System.out.println(result);
 	}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 3250f4058ff947148c54829eb1aee1ecd8a1bcab
